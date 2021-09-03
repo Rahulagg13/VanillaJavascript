@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rectangle Play</title>
+  </head>
+  <body>
+    <input
+      type="number"
+      min="1"
+      name="length"
+      class="length"
+      placeholder="length"
+    />
+    <input
+      type="number"
+      min="1"
+      name="breadth"
+      class="breadth"
+      placeholder="breadth"
+    />
+
+    <button class="btn">Submit</button>
+    <div class="rec"></div>
+    <div class="rec-info">
+      <div>
+        isValid:
+        <span class="valid"></span>
+      </div>
+      <div>
+        Area:
+        <span class="area"></span>
+      </div>
+      <div>
+        Perimeter:
+        <span class="prem"></span>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
