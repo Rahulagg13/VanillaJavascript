@@ -109,11 +109,11 @@ The value of the key is person[x]
 // source is other object
 //it cannot over write
 // example-->
-const o1 = {
-  a: 1,
-  b: 2,
-  c: 3,
-};
+// const o1 = {
+//   a: 1,
+//   b: 2,
+//   c: 3,
+// };
 
-const o2 = Object.assign({ c: 5, d: 78, e: 908 }, o1);
-console.log(o2);
+// const o2 = Object.assign({ c: 5, d: 78, e: 908 }, o1);
+// console.log(o2);

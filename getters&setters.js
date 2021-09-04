@@ -22,11 +22,11 @@ setters start with word 'set'-->they are known as mutators
 //   get fullName() {
 //     //this is a getter starting with word get
 //     //get FullName is not a function
-//     return `${this.firstName} ${this.lastName}`;
+//     // return `${this.firstName} ${this.lastName}`;
 //   },
 // };
 
-// //calling the getter
+//calling the getter
 // var name = Name.fullName; //it will give the fullname
 // console.log(name);
 
