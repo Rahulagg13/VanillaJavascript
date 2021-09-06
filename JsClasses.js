@@ -32,9 +32,10 @@ JAVASCRIPT CLASSES ARE DECLARE USING KEYWORD CLASS
 //     this.name = name;
 //   }
 //   //Declaring method
+//   //Instance Mrethods
 //   detail() {
-//     document.writeln(this.id + " " + this.name + "<br/>");
-//     document.writeln(this.id + " , " + this.name + "<br/>");
+//     console.log(this.id + " " + this.name + "<br/>");
+//     // console.log(this.id + " , " + this.name + "<br/>");
 //   }
 // }
 // //passing object to a variable
@@ -58,27 +59,28 @@ Another way to define a class is by using a class expression.
  The class expression allows us to fetch the class name. However, this will not be possible with class declaration.
 */
 //Unnamed class expression
-// var emp = class {
+// let emp = class {
+//   //it is just a simple variable assign with the class
 //   constructor(id, name) {
 //     (this.id = id), (this.name = name);
 //   }
 //   detail() {
-//     document.writeln(this.id + " , " + this.name);
+//     console.log(this.id + " , " + this.name);
 //   }
 // };
 // const e1 = new emp(101, "pulkit");
 // e1.detail();
-// var emp = class {
+// emp = class {
 //   constructor(id, name) {
 //     (this.id = id), (this.name = name);
 //   }
 //   detail() {
-//     document.writeln(this.id + " , " + this.name);
+//     console.log(this.id + " , " + this.name);
 //   }
 // };
 // const e2 = new emp(102, "tushar");
 // e2.detail();
-// document.writeln(emp.name);
+// console.log(emp.name);
 
 // Rerendering is possible in class expression
 //named class expression
@@ -87,24 +89,24 @@ Another way to define a class is by using a class expression.
 //     (this.id = id), (this.name = name);
 //   }
 //   detail() {
-//     document.writeln(this.id + " " + this.name);
+//     console.log(this.id + " " + this.name);
 //   }
 // };
 // const e1 = new emp(101, "pulkit");
 // e1.detail();
 // //Re-rendering of named class expression
-// var emp = class Employee {
+// emp = class Employee {
 //   constructor(id, name) {
 //     (this.id = id), (this.name = name);
 //   }
 //   detail() {
-//     document.writeln(this.id + " , " + this.name);
+//     console.log(this.id + " , " + this.name);
 //   }
 // };
 // var e2 = new emp(102, "tushar");
 // e2.detail();
 // console.log(emp.name);
-// console.log(Employee.name);//error
+// console.log(Employee.name); //error
 /*
  Class declaration vs Class Expression
 -->Class Declaration cannot be re-render while class expression can.
@@ -114,7 +116,18 @@ Another way to define a class is by using a class expression.
 
 /********THIS KEYWORD*********/
 // The JavaScript this keyword refers to the object it belongs to.
-
+// class Rect {
+//   constructor(length, breadth) {
+//     this.l = length;
+//     this.b = breadth;
+//   }
+//   //get method
+//   get detail() {
+//     return this.l + this.b;
+//   }
+// }
+// var r1 = new Rect(10, 20);
+// console.log(r1.detail);
 // More Examples
 // var Rectangle = class {
 //   //initializing an Object
@@ -123,7 +136,7 @@ Another way to define a class is by using a class expression.
 //   }
 //   //declaring methods
 //   getArea() {
-//     document.writeln(
+//     console.log(
 //       this.width +
 //         " * " +
 //         this.height +
@@ -133,7 +146,7 @@ Another way to define a class is by using a class expression.
 //     );
 //   }
 //   getDescription() {
-//     document.writeln(
+//     console.log(
 //       "Hi I am a rectangle of height= " +
 //         this.height +
 //         " and width = " +
@@ -180,10 +193,10 @@ Another way to define a class is by using a class expression.
 // console.log("Number of requests");
 // console.log(s1.requests);
 
-//Static members
-//static members are not called upon objects
+// Static members
+// static members are not called upon objects
 // they are refrenced to the classes
-//They are upon Classes
+// They are  call upon Classes
 // class Square {
 //   constructor(side) {
 //     this.side = side;
@@ -205,4 +218,4 @@ Another way to define a class is by using a class expression.
 // var s2 = new Square(10);
 // console.log(Square.isEqual(s1, s2));
 // console.log(Square.Valid(s1));
-// //if we use s1.isEqual(s1,s2), then it will throw an error that it is is Equal is not a function
+// if we use s1.isEqual(s1,s2), then it will throw an error that it is is Equal is not a function

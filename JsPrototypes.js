@@ -7,7 +7,8 @@ This property is a prototype object that holds a constructor property.
 
 #syntax
 
-ClassName.prototype.methodName
+ClassName.prototype.methodName=value
+value may be a constructor or a string value
 
 */
 //Requirement for Prototype Objects

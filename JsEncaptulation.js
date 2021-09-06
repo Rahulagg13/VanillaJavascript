@@ -1,6 +1,6 @@
 //*************JAVASCRIPT ENCAPSULATION*************
 //wrapping of data and methods under one unit name is called encapsulation
-// example class
+// example --> class
 
 /*
 The JavaScript Encapsulation is a process of binding the data (i.e. variables) with the functions acting on that data.
@@ -43,7 +43,3 @@ Use setter methods to set the data and getter methods to get that data.
 // console.log(pulkit.Marks);
 // console.log(pulkit.Name);
 // console.log(Student.isValidMarks(pulkit));
-
-//Javascript encapsulation with object.prototype
-
-// var pulkit = new Student("Pulkit", 90);

@@ -5,9 +5,9 @@
 //objects have key value pairs
 //since js is object-oriented language then all things in js are in obj.
 //we can declare objects in js in 3 ways:-
-//1.by using object literals //simple
-//2.by crating instance of object //use of new keyword
-//3.by using an object constructor //use of new keyword
+// 1.by using object literals //simple
+// 2.by creating instance of object //use of new keyword
+// 3.by using an object constructor //use of new keyword
 
 //1. by using object literals
 // const name = {
@@ -33,11 +33,20 @@
 // console.log(person.firstName);
 // console.log(person.lastName);
 
+//one more example
+// function Rect(length, breadth) {
+//   this.length = length;
+//   this.breadth = breadth;
+// }
+// const r1 = new Rect(10, 20);
+// console.log(r1.length);
+// console.log(r1.breadth);
+
 //Javascript Object Properties
 //Methods to Access the properties of Javascript objects are-->
-//1. obj.key
-//2. obj["key"]
-//3. let x="key" and obj[x]
+// 1. obj.key
+// 2. obj["key"]
+// 3. let x="key" and obj[x]
 //  Example
 // 1. by using object literals
 
@@ -59,7 +68,20 @@
 //   //it will give key
 //   console.log(name[x]);
 // }
+//one more example
+// function Rect(length, breadth) {
+//   this.length = length;
+//   this.breadth = breadth;
+//   this.color = "red";
+//   this.n_o_s = 4;
+// }
+// const r1 = new Rect(10, 20);
+// console.log(r1.length);
+// for (property in r1) {
+//   console.log(r1[property]);
+// }
 /*
+
 Example Explained
 The for in loop iterates over a person object
 Each iteration returns a key (x)
@@ -117,3 +139,16 @@ The value of the key is person[x]
 
 // const o2 = Object.assign({ c: 5, d: 78, e: 908 }, o1);
 // console.log(o2);
+const Obj = {
+  o1: "pulkit",
+  o2: ["dance", "sing", "Games"],
+  o3: {
+    f1: "paw Bhaji",
+    f2: "Choole bhature",
+    f3: ["bada paww", "burger", "chowmein"],
+  },
+};
+console.log(Obj);
+for (Element in Obj) {
+  console.log(Obj[Element]);
+}
