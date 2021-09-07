@@ -1,27 +1,24 @@
-//JAVASCRIPT INDEX
+//JAVASCRIPT INDEX..................
+______________________________________
 
 A.JAVASCRIPT OOps
 
 1.class
-
 - getters and setters
 -static methods
-
 2.object
 -object methods
-
 3.prototypes
-
 4.constructor
-
 5.Js Static methods
 6.Encapsulation
 7.Inheritance
 8.Polymorphism
 9.Js Abstraction
-
+______________________________________
 
 B.Cookies
+______________________________________
 
 C.Basic JAVASCRIPT
 1.Array
