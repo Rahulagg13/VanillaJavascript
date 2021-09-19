@@ -195,7 +195,7 @@ Another way to define a class is by using a class expression.
 
 // Static members
 // static members are not called upon objects
-// they are refrenced to the classes
+// they are referenced to the classes
 // They are  call upon Classes
 // class Square {
 //   constructor(side) {
@@ -218,4 +218,4 @@ Another way to define a class is by using a class expression.
 // var s2 = new Square(10);
 // console.log(Square.isEqual(s1, s2));
 // console.log(Square.Valid(s1));
-// if we use s1.isEqual(s1,s2), then it will throw an error that it is is Equal is not a function
+// if we use s1.isEqual(s1,s2), then it will throw an error that 'isEqual' is not a function

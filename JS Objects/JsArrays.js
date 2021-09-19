@@ -40,6 +40,10 @@ This method doesn't make any change in the original array.
 // example:-
 // const Array1 = [1, 2, 3];
 // const Array2 = [4, 5, 6];
+// const Array3 = [7, 8, 9];
+// const result = Array1.concat(Array2, Array3);
+// console.log(Array1);
+// console.log(result);
 // console.log(Array1.concat(Array2));
 //Example 2:-
 // const Array1 = [1, 2, 3];
@@ -121,3 +125,17 @@ this fill the array with the value provided
 // console.log(newArray.fill("p", 3, 7));
 
 //7.form()
+
+//values()
+// const arr = [1, 2, 3];
+// console.log(arr.values());
+// const itr = arr.values();
+// for (let x of arr) {
+//   console.log(x);
+// }
+//toLocalString()
+// const arr = [1, 2, , 3, 4];
+// console.log(arr.toLocaleString());
+//toString()
+// const arr = [1, 2, 3];
+// console.log(arr.toString());

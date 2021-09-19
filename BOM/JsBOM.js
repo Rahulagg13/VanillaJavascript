@@ -15,6 +15,7 @@ alert("hii")
 3.history
 4.navigator
 5.location
+6.localStorage
 */
 
 //****1. Window object
@@ -37,3 +38,20 @@ alert("hii")
 // confirm("this is going to happen");
 // open("https://www.google.com");
 // close("https://www.google.com");
+
+//****2.History
+/*
+1.go()
+2.back()
+3.forward()
+4.backward()
+5.length()
+*/
+
+//****3.Navigator
+/*
+1.clipboard //imp
+
+
+*/
+// navigator.clipboard.writeText("hello world");

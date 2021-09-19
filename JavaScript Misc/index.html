@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="chartContainer" style="height: 500px; width: 50%"></div>
+    <div id="cartBox"></div>
+  </body>
+  <!-- <script src="./Js Debugger.js"></script> -->
+  <script src="./Js Promise.js"></script>
+  <script src="canvasjs.min.js"></script>
+  <script>
+    window.onload = function () {
+      var chart = new CanvasJS.Chart("chartContainer", {
+        data: [
+          {
+            type: "bar",
+            dataPoints: [
+              { x: 10, y: 10 },
+              { x: 20, y: 15 },
+              { x: 30, y: 25 },
+              { x: 40, y: 30 },
+              { x: 50, y: 28 },
+            ],
+          },
+        ],
+      });
+      var LineChart = new CanvasJS.Chart("cartBox", {
+        data: [
+          {
+            type: "spline",
+            dataPoints: [
+              { x: 10, y: 10 },
+              { x: 20, y: 15 },
+              { x: 30, y: 25 },
+              { x: 40, y: 30 },
+              { x: 50, y: 28 },
+            ],
+          },
+        ],
+      });
+
+      chart.render();
+      LineChart.render();
+    };
+  </script>
+</html>

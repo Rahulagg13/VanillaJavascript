@@ -24,7 +24,7 @@ Thus, the functions are loaded once into the memory.
 //  and objects of that class derived from the upper base class
 // so from  that way prototypes are available to each object of the class
 // this is known as prototype chaining
-// Objects //inherit prototypes
+// Objects //inherit prototypes //globally present
 //   ^
 //   |
 //Classes //inheriting from Objects
@@ -33,16 +33,37 @@ Thus, the functions are loaded once into the memory.
 //Class Object1  //inheriting from class
 
 // Examples
-function Person(firstName, lastName) {
-  //Instance Members
-  this.firstName = firstName;
-  this.lastName = lastName;
-}
-var pulkit = new Person("Pulkit", "gupta");
-//prototype members
-Person.prototype.fullName = function () {
-  //ClassName.prototype.Method
-  return this.firstName + " " + this.lastName;
-};
-Person.prototype.gender = "Male";
-console.log(pulkit.fullName());
+// function Person(firstName, lastName) {
+//   //Instance Members
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+// }
+// var pulkit = new Person("Pulkit", "gupta");
+// //prototype members
+// Person.prototype.fullName = function () {
+//   //ClassName.prototype.Method
+//   return this.firstName + " " + this.lastName;
+// };
+// Person.prototype.gender = "Male";
+// console.log(pulkit.fullName());
+
+//Example 2:
+// function College(Name, Branch) {
+//   this.Name = Name;
+//   this.Branch = Branch;
+// }
+// var clg = new College("Abes", "CSE"); //object (3rd method)
+
+// College.prototype.Details = function () {
+//   //adding a prototype
+//   return this.Name + " " + this.Branch;
+// };
+// College.prototype.Head = "Pulkit Gupta";
+// console.log(College);
+// console.log(clg.Details());
+// console.log(clg.Head);
+
+// const obj = {
+//   name: "xyz",
+// };
+// console.log(obj.Head); //for this object it is undefined
