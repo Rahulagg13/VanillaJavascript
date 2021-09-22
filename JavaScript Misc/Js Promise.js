@@ -4,11 +4,13 @@ Promises in real-life express a trust between two or more persons and an assuran
 
 
 */
-// var a = 1;
-// var b = 2;
-// var c = 3;
+var XMLHttpRequest = require("xhr2");
 
-// console.log(eval("a + b + c"));
-var d1 = new Date();
-var d2 = new Date(1);
-console.log((d1 - d2).toString());
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function () {
+    document.getElementById("demo").innerHTML = this.responseText;
+  };
+  xhttp.open("GET", "sample.html", true);
+  xhttp.send();
+}
